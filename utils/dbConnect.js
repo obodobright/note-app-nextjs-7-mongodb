@@ -12,7 +12,7 @@ async function dbConnect() {
         useUnifiedTopology: true,
     });
 
-    connection.isConnected = db.connecions[0].readyState;
+    connection.isConnected = db.connection[0].readyState;
     console.log(connection.isConnected);
 }
 
